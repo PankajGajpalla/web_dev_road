@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            margin: 10px;
+            padding: 2px;
+            background-color: beige;
+            /* width: 100%; */
+            width: 450px;
+            
+            display: flex;
+            flex-direction: row;
+            /* height: 200px; dont use this  */
+        }
+        #leftbox{
+            background-color: aqua;
+            border: 1px solid blue;
+            width: 47%;
+            margin: 2px;
+            padding: 2px;
+            display: flex;
+            flex-direction: column;
+        }
+        #rightbox{
+            background-color: yellow;
+            border: 1px solid blue;
+            width: 47%;
+            
+            margin: 2px;
+            padding: 2px;
+        }
+        p{
+            border: 1px solid brown;
+
+        }
+        
+        img{
+            width: 170px;
+        }
+        @media (max-width: 646px) {
+            .container{
+                flex-direction: column;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="leftbox">
+            <p>Text1</p>
+            <p>Text2</p>
+        </div>
+        <div id="rightbox"><img src="luffy1.jpeg" alt="luffy1" ></div>
+        
+    </div>
+</body>
+</html>
