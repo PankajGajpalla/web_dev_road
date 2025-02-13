@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    /* box-sizing lagao scroll hatao  */
+
+}
+.container{
+    width: 100%;
+    height: 100%;
+    overflow-x: none;
+    background-color: #6ebde275;
+}
+.navcontainer{
+    padding: 10px;
+    width: 100vw;
+    min-height: 10%;
+    background: #7F7FD5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; */
+
+}
+#navlist{
+    font-size: 2.0rem;
+    width: 95%;
+    padding-left: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+#navitems{
+    display: flex;
+    gap: 30px;
+   
+}
+a{
+    text-decoration: none;
+    color: azure;
+}
+#navlogo{
+    font-size: 2.3rem;
+    color: azure;
+}
+.contentBox{
+    
+    padding: 2rem;
+    width: 60%;
+    /* border: 1px solid black; */
+    box-shadow: 0px 0px 30px;
+    background-color: rgba(255, 255, 255, 0.801);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+
+}
+.item{
+    display: flex;
+    justify-content: space-around;
+    margin: 15px;
+}
+.leftbox{
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+
+}
+.leftbox h3{
+    font-size: 1.5rem;
+}
+.leftbox li{
+    font-size: 1.1rem;
+}
+
+.rightbox{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    transition:all 0.3s linear 0s;
+}
+.rightbox img{
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+
+    transition:all 0.3s linear 0s;
+}
+
+.rightbox:hover{
+    transform: scale(1.2);
+}
+
+.rightbox .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 42, 42, 0.459);
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+    transition: all 0.3s linear 0s;
+}
+.rightbox:hover .overlay{
+    opacity: 1;
+}
+.rightbox .overlay span{
+    color: azure;
+    font-size: 1.4rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    width: 100%;
+}
+.footerbox{
+    /* display: flex; */
+    background: #7F7FD5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    min-height: 20px;
+    text-align: center;
+}
+.footerbox p{
+    color: azure;
+    font-size: 1.3rem;
+}
+
