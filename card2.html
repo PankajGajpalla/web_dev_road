@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .container1{
+            width: 100vw;
+            height: 100vh;
+            background-color: #FA8BFF;
+            background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card1{
+            width: 320px;
+            height: 450px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            border-radius: 20px;
+            /* padding: 15px; */
+        }
+        .card1 img{
+            width: 100%;
+            height: 30%;
+            border-top-left-radius: 10%;
+            border-top-right-radius: 10%;
+        }
+        .card1 p{
+            text-align: center;
+            font-size: 1em;
+            
+        }
+        .amount{
+            width: 75%;
+            height: 10%;
+            background-color: rgba(226, 146, 93, 0.856);
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-right: 10px;
+            padding-left: 10px;
+
+            transition: all 0.1s linear 0s;
+        }
+        .amount:hover{
+            transform: scale(1.1);
+        }
+        #payment_button{
+            width: 80%;
+            height: 10%;
+            background-color: rgb(148, 60, 10);
+            border-radius: 10px;
+            color: white;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
+            transition: all 0.1s linear 0s;
+            border-width: 0;
+        }
+        #payment_button:hover{
+            transform: scale(1.1);
+        }
+
+        .leftbox{
+            padding-top: 10px;
+            padding-bottom: 10px;
+            height: 100%;
+            /* width: fit-content; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+
+        }
+        .leftbox img{
+            width: 3.0rem;
+            height: 2rem;
+        }
+        .rightbox{
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .rightbox a{
+            text-decoration: none;
+        }
+        #cancel a{
+            text-decoration: none;
+            color: gray;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        #cancel{
+            transition: all 0.1s linear 0s;
+        }
+        #cancel:hover{
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 270px) {
+            .amount{
+                flex-direction: column;   
+                height: 40%;
+            }
+            .amount .leftbox{
+                flex-direction: column;
+            }
+            
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="container1">
+        <div class="card1">
+                <img src="luffy1.jpeg" alt="luffy">
+            <h2>Monkey D. Luffy</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quaerat tenetur error corrupti nulla? Corporis impedit ipsam dicta dolorem rem!</p>
+            <div class="amount">
+                <div class="leftbox">
+                    <img src="luffy4.jpeg" alt="luffy4">
+                    <div id="amt">
+                        <p>Annual Plan</p>
+                        <p>$99.9/year</p>
+                    </div>
+                </div>
+                <div class="rightbox">
+                    <a href="#">Change</a>
+                </div>
+            </div>
+            <button id="payment_button">Proceed to payment</button>
+            <div id="cancel">
+                <a href="#">Cancel Order</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
